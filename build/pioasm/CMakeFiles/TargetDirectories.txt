@@ -1,0 +1,3 @@
+/home/amin/AutoWaterOOP/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/amin/AutoWaterOOP/build/pioasm/CMakeFiles/edit_cache.dir
+/home/amin/AutoWaterOOP/build/pioasm/CMakeFiles/pioasm.dir
