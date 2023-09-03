@@ -3,7 +3,21 @@
 Mode Handler::selectMode()
 {
     this->display->clear();
-    this->display->print_wrapped("MODE: 1:PH 2:EC 3:PH&EC 4:READ");
+    // this->display->print_wrapped("MODE: 1:PH 2:EC 3:PH&EC 4:READ");
+    uint8_t customChar[8] = {
+        0b00000,
+        0b01010,
+        0b11111,
+        0b11111,
+        0b01110,
+        0b00100,
+        0b00000,
+        0b00000};
+    this->display->createChar(0, customChar);
+    this->display->goto_pos(0, 0);
+    this->display->print("AMIN");
+    this->display->write((uint8_t)0);
+    this->display->print("ADHAM");
     printf("MODE: 1:PH 2:EC 3:PH&EC 4:READ\n");
     Mode mode = not_selected;
     while (mode == not_selected)
